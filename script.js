@@ -202,7 +202,7 @@ document.getElementById('share-btn').onclick = function () {
   const tweet =
 `Just calculated my $U allocation for @union_build testnet 🧮
 
-My esteemated allocation is ${allocation} $U! 💥
+My estimated allocation is ${allocation} $U! 💥
 
 Try it yourself 👉 https://union-testers.vercel.app\n\nhttps://x.com/Shinosuka_eth/status/1950812056581820637`;
   const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}`;
