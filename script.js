@@ -211,5 +211,5 @@ Try it yourself 👉 https://union-testers.vercel.app\n\nhttps://x.com/Shinosuka
 
 // === View Maths Thread ===
 document.getElementById('math-btn').onclick = function () {
-  window.open('https://twitter.com/your_math_thread_link', '_blank');
+  window.open('https://x.com/Shinosuka_eth/status/1950812647706018160?t=gnxobvr8scj_UbudTbXHRw&s=19', '_blank');
 };
