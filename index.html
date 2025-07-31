@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Union Tester Allocation Calculator</title>
+  <!-- Load JetBrains Mono and Supermolot from local/Google/Fontsource as available -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="badge3.png" alt="Union Logo" class="union-logo"/>
+      <span class="union-title">UNION</span>
+    </div>
+    <div class="header-center">
+      <span class="calc-title">Union Tester Allocation Calculator</span>
+    </div>
+  </header>
+  <div class="header-divider"></div>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <!-- Step 1: Start Box -->
+    <section class="box center-box" id="start-box">
+      <img src="allo1.png" alt="Allocation" class="allo-img"/>
+      <h1 class="box-heading">Are You Ready To Calculate Your Allocation?</h1>
+      <p class="box-subheading">
+        All these calculations have been made based on Maths, Logic, Reasoning and Data Analysis.<br>
+        These are subject to change if the circumstances change.
+      </p>
+      <button class="primary-btn wide-btn" id="start-btn">Let's Do It!</button>
+    </section>
+
+    <!-- Step 2: Form Box (hidden initially) -->
+    <section class="box center-box hidden" id="form-box">
+      <div class="form-fields">
+        <label for="username" class="form-label">Enter your Twitter Username</label>
+        <input type="text" id="username" class="form-input" autocomplete="off" placeholder="@username" />
+
+        <label for="tester-level" class="form-label">Enter your Tester Rank (Correct)</label>
+        <input type="number" id="tester-level" class="form-input" min="1" max="10" placeholder="Level (4-10)" />
+
+        <label for="tester-xp" class="form-label">Enter your Tester XP</label>
+        <input type="number" id="tester-xp" class="form-input" min="0" placeholder="XP" />
+
+        <div class="error-msg" id="form-error"></div>
+
+        <button class="primary-btn wide-btn" id="calc-btn">Calculate My Allocation</button>
+      </div>
+    </section>
+
+    <!-- Step 3: Results Box (hidden initially) -->
+    <section class="box center-box hidden" id="result-box">
+      <div class="result-header">
+        <img src="" alt="Twitter PFP" class="twitter-pfp" id="twitter-pfp"/>
+        <span class="twitter-username" id="twitter-username"></span>
+      </div>
+      <h2 class="result-heading">Your $U Allocation: <span id="allocation-amount"></span></h2>
+
+      <table class="result-table">
+        <tbody>
+          <tr>
+            <td class="emoji-cell"><img src="allo2.png" class="case-emoji" alt="Ideal"/></td>
+            <td class="case-label">Ideal Case</td>
+            <td class="case-fdv">$500M–$750M</td>
+            <td class="case-value" id="ideal-value"></td>
+          </tr>
+          <tr>
+            <td class="emoji-cell"><img src="allo3.png" class="case-emoji" alt="Bull"/></td>
+            <td class="case-label">Bull Case</td>
+            <td class="case-fdv">$750M–$1B</td>
+            <td class="case-value" id="bull-value"></td>
+          </tr>
+          <tr>
+            <td class="emoji-cell"><img src="allo4.png" class="case-emoji" alt="Super Bull"/></td>
+            <td class="case-label">Super Bull Case</td>
+            <td class="case-fdv">$1.2B–$1.7B</td>
+            <td class="case-value" id="superbull-value"></td>
+          </tr>
+          <tr>
+            <td class="emoji-cell"><img src="allo5.png" class="case-emoji" alt="Giga Bull"/></td>
+            <td class="case-label">Giga Bull Case</td>
+            <td class="case-fdv">$1.7B–$2.5B</td>
+            <td class="case-value" id="gigabull-value"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="primary-btn wide-btn" id="share-btn">Share Your Allocation on X</button>
+      <button class="grey-btn wide-btn" id="math-btn">View Maths Behind This</button>
+    </section>
+  </main>
+
+  <div class="footer-divider"></div>
+  <!-- Fixed Footer -->
+  <footer class="footer">
+    <span class="footer-text">
+      These calculations are fully based off Maths, Codes, and Data Analytics.
+    </span>
+  </footer>
+
+  <!-- Confetti Container -->
+  <div id="confetti"></div>
+
+  <script src="script.js"></script>
+</body>
+                                     </html>
