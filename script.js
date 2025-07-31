@@ -204,7 +204,7 @@ document.getElementById('share-btn').onclick = function () {
 
 My esteemated allocation is ${allocation} $U! 💥
 
-Try it yourself 👉 https://union-testers.vercel.app\n`;
+Try it yourself 👉 https://union-testers.vercel.app\n\nhttps://x.com/Shinosuka_eth/status/1950812056581820637`;
   const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}`;
   window.open(url, '_blank');
 };
